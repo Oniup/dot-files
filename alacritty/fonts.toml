@@ -1,0 +1,9 @@
+[font]
+normal = { family = "Hasklug Nerd Font", style = "Medium" }
+italic = { family = "Hasklug Nerd Font", style = "Medium Italic" }
+bold = { family = "Hasklug Nerd Font", style = "Medium Bold" }
+bold_italic = { family = "Hasklug Nerd Font", style = "Black Italic" }
+size = 15.5
+builtin_box_drawing = true
+
+# size = 15

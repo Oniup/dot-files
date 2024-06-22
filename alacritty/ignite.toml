@@ -1,0 +1,27 @@
+# Ignite Color Scheme
+# Source: https://github.com/Oniup/ignite.nvim/blob/master/extra/alacritty_colors.toml
+
+[colors.primary]
+foreground = "#A6A499"
+background = "#131515"
+dim_foreground = "#A69A8D"
+
+[colors.normal]
+black = "#59544D"   # comment
+red = "#E74E3D"     # keyword
+green = "#9AAD6C"   # string
+yellow = "#F6BA41"  # type
+blue = "#82979C"    # operator
+magenta = "#EE617B" # constant
+cyan = "#FE7442"    # method (for orange)
+white = "#A6A499"   # property
+
+[colors.bright]
+black = "#59544D"   # comment
+red = "#E74E3D"     # keyword
+green = "#BDB598"   # module
+yellow = "#FE7442"  # method
+blue = "#879291"    # variable
+magenta = "#EE617B" # constant
+cyan = "#E74E3D"    # keyword
+white = "#A69A8D"   # text
