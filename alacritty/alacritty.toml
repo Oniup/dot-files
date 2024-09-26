@@ -14,4 +14,4 @@ hide_when_typing = true
 
 # <key>, <mods>, <mode>, <action> | <chars>
 [keyboard]
-bindings = [{ key = "Escape", mods = "Shift", action = "ToggleViMode" }]
+bindings = [{ key = "\\", mods = "Control", action = "ToggleViMode" }]
