@@ -1,0 +1,98 @@
+{
+    // Vim Settings
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.hlsearch": true,
+    "vim.leader": "<space>",
+    "vim.insertModeKeyBindings": [
+        { "before": [ "j", "k" ], "after": [ "<Esc>" ] }
+    ],
+    "vim.normalModeKeyBindings": [
+        { "before": ["<leader>", "d"], "after": ["\"", "_", "d"] },
+        { "before": ["<leader>", "c"], "after": ["\"", "_", "c"] },
+        { "before": ["g", "l"], "after": ["g", "h"] },
+        // Debug
+        { "before": ["<leader>", "b", "r"], "commands": ["editor.debug.action.toggleBreakpoint"] },
+        { "before": ["<leader>", "b", "c"], "commands": ["workbench.debug.viewlet.action.removeAllBreakpoints"] },
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        { "before": ["<S-h>"], "commands": [":bprevious"] },
+        { "before": ["<C-q>"], "commands": [":q"] },
+        { "before": ["<S-l>"], "commands": [":bnext"] },
+        { "before": ["<leader>", "s", "l"], "commands": [":vsplit"] },
+        { "before": ["<leader>", "s", "j"], "commands": [":split"] },
+        { "before": ["<leader>", "f", "i"], "commands": ["workbench.action.quickOpen"] },
+        { "before": ["<leader>", "n"], "commands": [":noh"] },
+        // Jump btw panels
+        { "before": ["<C-l>"], "commands": ["workbench.action.focusLeftGroup"] },
+        { "before": ["<C-h>"], "commands": ["workbench.action.focusRightGroup"] },
+        { "before": ["<C-j>"], "commands": ["workbench.action.focusBelowGroup"] },
+        { "before": ["<C-k>"], "commands": ["workbench.action.focusAboveGroup"] },
+    ],
+    "vim.visualModeKeyBindings": [
+        { "before": ["<leader>", "d"], "after": ["\"", "_", "d"] },
+        { "before": ["<leader>", "c"], "after": ["\"", "_", "c"] },
+        { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+        { "before": [">"], "commands": ["editor.action.indentLines"] },
+        { "before": ["<S-k>"], "commands": ["editor.action.moveLinesUpAction"] },
+        { "before": ["<S-j>"], "commands": ["editor.action.moveLinesDownAction"] },
+        { "before": ["p"], "commands": ["editor.action.clipboardPasteAction"] },
+    ],
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+    },
+
+    // Editor Settings
+    // "editor.rulers": [90, 90],
+    "editor.lineNumbers": "relative",
+    "editor.smoothScrolling": false,
+    "editor.mouseWheelZoom": true,
+    "editor.fontFamily": "Hack Nerd Font Mono",
+    "editor.scrollbar.vertical": "visible",
+    "editor.scrollbar.horizontal": "visible",
+    "editor.fontSize": 17,
+    "editor.parameterHints.cycle": true,
+    "editor.inlayHints.enabled": "off",
+    "editor.minimap.maxColumn": 80,
+    "editor.stickyScroll.enabled": false,
+    "editor.bracketPairColorization.enabled": false,
+    "editor.renderWhitespace": "none",
+    "editor.minimap.enabled": false,
+    "editor.fontLigatures": true,
+    "breadcrumbs.enabled": false,
+
+    // Workbench
+    "workbench.layoutControl.enabled": false,
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.autoLockGroups": {
+        "workbench.editor.chatSession": false
+    },
+ 
+    // Cmake
+    "cmake.configureOnOpen": false,
+    "cmake.buildDirectory": "${workspaceFolder}/bin",
+    "cmake.debugConfig": {
+        "console": "externalTerminal"
+    },
+
+    // Dotnet
+    "dotnet.codeLens.enableReferencesCodeLens": false,
+    "dotnetAcquisitionExtension.enableTelemetry": false,
+
+    // GLSL
+    "glsl-analyzer.path": "c:\\Users\\Ewan_\\AppData\\Roaming\\Code\\User\\globalStorage\\nolanderc.glsl-analyzer\\glsl_analyzer_install\\bin\\glsl_analyzer.exe",
+
+    // AI
+    "C_Cpp.copilotHover": "disabled",
+    "chat.notifyWindowOnConfirmation": false,
+    "chat.commandCenter.enabled": false,
+    "chat.agent.enabled": false,
+
+    "git.openRepositoryInParentFolders": "never",
+    "telemetry.feedback.enabled": false,
+    "window.commandCenter": false,
+    "explorer.confirmDelete": false,
+    "workbench.iconTheme": "file-icons",
+}
