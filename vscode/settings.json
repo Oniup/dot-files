@@ -22,7 +22,9 @@
         { "before": ["<leader>", "s", "l"], "commands": [":vsplit"] },
         { "before": ["<leader>", "s", "j"], "commands": [":split"] },
         { "before": ["<leader>", "f", "i"], "commands": ["workbench.action.quickOpen"] },
+        // Useful
         { "before": ["<leader>", "n"], "commands": [":noh"] },
+        { "before": ["<leader>", "r", "e"], "commands": ["editor.action.rename"]},
         // Jump btw panels
         { "before": ["<C-l>"], "commands": ["workbench.action.focusLeftGroup"] },
         { "before": ["<C-h>"], "commands": ["workbench.action.focusRightGroup"] },
@@ -39,7 +41,7 @@
         { "before": ["p"], "commands": ["editor.action.clipboardPasteAction"] },
     ],
     "vim.handleKeys": {
-        "<C-a>": false,
+        "<C-a>": true,
         "<C-f>": false
     },
 
@@ -94,5 +96,6 @@
     "telemetry.feedback.enabled": false,
     "window.commandCenter": false,
     "explorer.confirmDelete": false,
-    "workbench.iconTheme": "file-icons",
+    "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-auto",
+    "explorer.confirmDragAndDrop": false,
 }
