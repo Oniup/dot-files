@@ -42,7 +42,8 @@
     ],
     "vim.handleKeys": {
         "<C-a>": true,
-        "<C-f>": false
+        "<C-f>": false,
+        "<C-h>": true,
     },
 
     // Editor Settings
@@ -98,4 +99,71 @@
     "explorer.confirmDelete": false,
     "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-auto",
     "explorer.confirmDragAndDrop": false,
+
+    // Color Scheme
+    "editor.semanticHighlighting.enabled": true,
+    "editor.semanticTokenColorCustomizations": {
+        "enabled": true,
+        "rules": {
+            "keyword": "#d5564d",
+            "controlKeyword":"#cba3d7",
+            "macro": "#b06db7",
+            "namespace": "#c0ccb9",
+            "enumMember": "#936228",
+
+            "class": "#efd630",
+            "struct": "#efd630",
+            "templateType": "#efd630",
+            "enum": "#efd630",
+            "type": "#efd630",
+
+            "function": "#d37f2a",
+            "method": "#d37f2a",
+            "templateFunction": "#d37f2a",
+
+            "variable": "#b0b176",
+            "parameter": "#b6a671",
+            "property": "#cdce87",
+            "field": "#cdce87",
+        }
+    },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "storage.modifier",
+                "settings": {
+                    "foreground": "#CCCCCC",
+                }
+            },
+            {
+                "scope": "support.type.property-name",
+                "settings": {
+                    "foreground": "#b0b176",
+                }
+            },
+            {
+                "scope": "variable",
+                "settings": {
+                    "foreground": "#b0b176",
+                }
+            },
+            {
+                "scope": "entity.name.function.preprocessor",
+                "settings": {
+                    "foreground": "#b06db7",
+                }
+            },
+            {
+                "scope": [
+                    "constant.language",
+                    "keyword",
+                    "keyword.operator.cast",
+                    "storage.type",
+                ],
+                "settings": {
+                    "foreground": "#d5564d"
+                }
+            },
+        ]
+    }
 }
