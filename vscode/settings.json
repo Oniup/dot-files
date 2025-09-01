@@ -179,12 +179,12 @@
             "enumMember": "#936228",
             "number": "#a7cea8",
 
-            // "class": "#efd630",
-            // "struct": "#efd630",
+            "class": "#efd630",
+            "struct": "#efd630",
             // "templateType": "#efd630",
-            // "enum": "#efd630",
+            "enum": "#efd630",
             // "type": "#efd630",
-            // "typeParameter": "#efd630",
+            "typeParameter": "#efd630",
 
             "function": "#d37f2a",
             "method": "#d37f2a",
