@@ -172,9 +172,9 @@
     "editor.semanticTokenColorCustomizations": {
         "enabled": true,
         "rules": {
-            "keyword": "#d5564d",
-            "controlKeyword":"#cba3d7",
-            "macro": "#b06db7",
+            // "keyword": "#d5564d",
+            // "controlKeyword":"#cba3d7",
+            // "macro": "#b06db7",
             "namespace": "#c0ccb9",
             "enumMember": "#936228",
             "number": "#a7cea8",
@@ -193,7 +193,7 @@
             // "variable": "#b0b176",
             "parameter": "#b6a671",
             "property": "#cdce87",
-            "field": "#cdce87",
+            "field": "#c2c481",
         }
     },
     "workbench.colorTheme": "Visual assist color theme",
