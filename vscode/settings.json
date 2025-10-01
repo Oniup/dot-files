@@ -49,7 +49,7 @@
     // Editor Settings
     // "editor.rulers": [90, 90],
     "editor.lineNumbers": "relative",
-    "editor.smoothScrolling": false,
+    "editor.smoothScrolling": true,
     "editor.mouseWheelZoom": true,
     "editor.fontFamily": "Hack Nerd Font Mono",
     "editor.scrollbar.vertical": "visible",
@@ -61,17 +61,41 @@
     "editor.stickyScroll.enabled": false,
     "editor.bracketPairColorization.enabled": false,
     "editor.renderWhitespace": "none",
-    "editor.minimap.enabled": false,
-    "editor.fontLigatures": true,
-    "breadcrumbs.enabled": false,
+    "editor.fontLigatures": false,
+    "editor.cursorBlinking": "solid",
+    "editor.colorDecorators": false,
 
     // Workbench
+    "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-auto",
+    "workbench.colorTheme": "Better Visual Assist",
+    "workbench.list.smoothScrolling": true,
     "workbench.layoutControl.enabled": false,
     "workbench.editor.empty.hint": "hidden",
     "workbench.editor.enablePreview": false,
     "workbench.editor.autoLockGroups": {
         "workbench.editor.chatSession": false
     },
+
+    // Telemetry
+    "telemetry.feedback.enabled": false,
+    "telemetry.editStats.enabled": false,
+    "telemetry.editStats.details.enabled": false,
+    "telemetry.editStats.showDecorations": false,
+    "telemetry.telemetryLevel": "off",
+
+    // AI
+    "chat.disableAIFeatures": true,
+    "C_Cpp.copilotHover": "disabled",
+
+    // Terminal
+    "terminal.integrated.gpuAcceleration": "on",
+    "terminal.integrated.smoothScrolling": true,
+
+    // Other
+    "window.commandCenter": false,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "git.openRepositoryInParentFolders": "never",
  
     // Cmake
     "cmake.configureOnOpen": false,
@@ -86,18 +110,4 @@
 
     // GLSL
     "glsl-analyzer.path": "c:\\Users\\Ewan_\\AppData\\Roaming\\Code\\User\\globalStorage\\nolanderc.glsl-analyzer\\glsl_analyzer_install\\bin\\glsl_analyzer.exe",
-
-    // AI
-    "C_Cpp.copilotHover": "disabled",
-    "chat.notifyWindowOnConfirmation": false,
-    "chat.commandCenter.enabled": false,
-    "chat.agent.enabled": false,
-
-    "git.openRepositoryInParentFolders": "never",
-    "telemetry.feedback.enabled": false,
-    "window.commandCenter": false,
-    "explorer.confirmDelete": false,
-    "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-auto",
-    "explorer.confirmDragAndDrop": false,
-    "workbench.colorTheme": "Better Visual Assist",
 }
