@@ -65,9 +65,13 @@
     "editor.cursorBlinking": "solid",
     "editor.colorDecorators": false,
 
-    // Workbench
-    "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-auto",
+    // Themes
     "workbench.colorTheme": "Better Visual Assist",
+    "workbench.iconTheme": "material-icon-theme",
+    "material-icon-theme.folders.theme": "classic",
+    "material-icon-theme.hidesExplorerArrows": true,
+
+    // Workbench
     "workbench.list.smoothScrolling": true,
     "workbench.layoutControl.enabled": false,
     "workbench.editor.empty.hint": "hidden",
@@ -93,6 +97,7 @@
 
     // Other
     "window.commandCenter": false,
+    "breadcrumbs.enabled": false,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "git.openRepositoryInParentFolders": "never",
@@ -102,7 +107,7 @@
     "cmake.buildDirectory": "${workspaceFolder}/bin",
     "cmake.debugConfig": {
         "console": "externalTerminal"
-    },
+   },
 
     // Dotnet
     "dotnet.codeLens.enableReferencesCodeLens": false,
