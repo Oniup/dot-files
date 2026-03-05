@@ -3,7 +3,7 @@ working_directory = "C:/Dev"
 live_config_reload = true
 
 import = [
-    "~/AppData/Roaming/alacritty/fonts.toml",
+    "./fonts.toml",
 ]
 
 [window]
