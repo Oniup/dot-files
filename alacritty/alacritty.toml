@@ -1,17 +1,19 @@
+[general]
+working_directory = "C:/Dev"
 live_config_reload = true
 
 import = [
-    "~/.config/alacritty/ignite.toml",
-    "~/.config/alacritty/fonts.toml",
+    "~/AppData/Roaming/alacritty/fonts.toml",
 ]
 
 [window]
-dimensions = { columns = 125, lines = 30 }
-padding = { x = 2, y = 0 }
+dimensions = { columns = 112, lines = 27 }
+
+[terminal]
+shell = "pwsh"
 
 [mouse]
 hide_when_typing = true
 
-# <key>, <mods>, <mode>, <action> | <chars>
 [keyboard]
-bindings = [{ key = "\\", mods = "Control", action = "ToggleViMode" }]
+bindings = [{key = "F1", mods = "Control", action = "ToggleViMode"}]
