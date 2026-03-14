@@ -1,55 +1,7 @@
 {
-    // Vim Settings
-    "vim.incsearch": true,
-    "vim.useSystemClipboard": true,
-    "vim.hlsearch": true,
-    "vim.leader": "<space>",
-    "vim.insertModeKeyBindings": [
-        { "before": [ "j", "k" ], "after": [ "<Esc>" ] }
-    ],
-    "vim.normalModeKeyBindings": [
-        { "before": ["<leader>", "d"], "after": ["\"", "_", "d"] },
-        { "before": ["<leader>", "c"], "after": ["\"", "_", "c"] },
-        { "before": ["g", "l"], "after": ["g", "h"] },
-        // Debug
-        { "before": ["<leader>", "b", "r"], "commands": ["editor.debug.action.toggleBreakpoint"] },
-        { "before": ["<leader>", "b", "c"], "commands": ["workbench.debug.viewlet.action.removeAllBreakpoints"] },
-    ],
-    "vim.normalModeKeyBindingsNonRecursive": [
-        { "before": ["<S-h>"], "commands": [":bprevious"] },
-        { "before": ["<C-q>"], "commands": [":q"] },
-        { "before": ["<S-l>"], "commands": [":bnext"] },
-        { "before": ["<leader>", "s", "l"], "commands": [":vsplit"] },
-        { "before": ["<leader>", "s", "j"], "commands": [":split"] },
-        { "before": ["<leader>", "f", "i"], "commands": ["workbench.action.quickOpen"] },
-        // Useful
-        { "before": ["<leader>", "n"], "commands": [":noh"] },
-        { "before": ["<leader>", "r", "e"], "commands": ["editor.action.rename"]},
-        // Jump btw panels
-        { "before": ["<C-l>"], "commands": ["workbench.action.focusLeftGroup"] },
-        { "before": ["<C-h>"], "commands": ["workbench.action.focusRightGroup"] },
-        { "before": ["<C-j>"], "commands": ["workbench.action.focusBelowGroup"] },
-        { "before": ["<C-k>"], "commands": ["workbench.action.focusAboveGroup"] },
-    ],
-    "vim.visualModeKeyBindings": [
-        { "before": ["<leader>", "d"], "after": ["\"", "_", "d"] },
-        { "before": ["<leader>", "c"], "after": ["\"", "_", "c"] },
-        { "before": ["<"], "commands": ["editor.action.outdentLines"] },
-        { "before": [">"], "commands": ["editor.action.indentLines"] },
-        { "before": ["<S-k>"], "commands": ["editor.action.moveLinesUpAction"] },
-        { "before": ["<S-j>"], "commands": ["editor.action.moveLinesDownAction"] },
-        { "before": ["p"], "commands": ["editor.action.clipboardPasteAction"] },
-    ],
-    "vim.handleKeys": {
-        "<C-a>": true,
-        "<C-f>": false,
-        "<C-h>": true,
-    },
-
     // Editor Settings
     // "editor.rulers": [90, 90],
     "editor.lineNumbers": "relative",
-    "editor.smoothScrolling": true,
     "editor.mouseWheelZoom": true,
     "editor.fontFamily": "Hack Nerd Font Mono",
     "editor.scrollbar.vertical": "visible",
@@ -64,13 +16,12 @@
     "editor.fontLigatures": false,
     "editor.cursorBlinking": "solid",
     "editor.colorDecorators": false,
-
+    "editor.formatOnSave": true,
     // Themes
     "workbench.colorTheme": "Better Visual Assist",
     "workbench.iconTheme": "material-icon-theme",
     "material-icon-theme.folders.theme": "classic",
     "material-icon-theme.hidesExplorerArrows": true,
-
     // Workbench
     "workbench.list.smoothScrolling": true,
     "workbench.layoutControl.enabled": false,
@@ -79,40 +30,294 @@
     "workbench.editor.autoLockGroups": {
         "workbench.editor.chatSession": false
     },
-
     // Telemetry
     "telemetry.feedback.enabled": false,
     "telemetry.editStats.enabled": false,
     "telemetry.editStats.details.enabled": false,
     "telemetry.editStats.showDecorations": false,
     "telemetry.telemetryLevel": "off",
-
     // AI
     "chat.disableAIFeatures": true,
     "C_Cpp.copilotHover": "disabled",
-
     // Terminal
     "terminal.integrated.gpuAcceleration": "on",
     "terminal.integrated.smoothScrolling": true,
-
     // Other
     "window.commandCenter": false,
     "breadcrumbs.enabled": false,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "git.openRepositoryInParentFolders": "never",
- 
     // Cmake
     "cmake.configureOnOpen": false,
     "cmake.buildDirectory": "${workspaceFolder}/bin",
     "cmake.debugConfig": {
         "console": "externalTerminal"
-   },
-
+    },
     // Dotnet
     "dotnet.codeLens.enableReferencesCodeLens": false,
     "dotnetAcquisitionExtension.enableTelemetry": false,
-
+    // Pylance
+    "python.analysis.typeCheckingMode": "standard",
     // GLSL
     "glsl-analyzer.path": "c:\\Users\\Ewan_\\AppData\\Roaming\\Code\\User\\globalStorage\\nolanderc.glsl-analyzer\\glsl_analyzer_install\\bin\\glsl_analyzer.exe",
+    "git.enableSmartCommit": true,
+    "cSpell.userWords": [
+        "Ewan",
+        "MSVC",
+        "raylibpy"
+    ],
+    "cmake.showConfigureWithDebuggerNotification": false,
+    // Vim Settings
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.hlsearch": true,
+    "vim.leader": "<space>",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "<leader>",
+                "d"
+            ],
+            "after": [
+                "\"",
+                "_",
+                "d"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "c"
+            ],
+            "after": [
+                "\"",
+                "_",
+                "c"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "l"
+            ],
+            "after": [
+                "g",
+                "h"
+            ]
+        },
+        // Debug
+        {
+            "before": [
+                "<leader>",
+                "b",
+                "r"
+            ],
+            "commands": [
+                "editor.debug.action.toggleBreakpoint"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "b",
+                "c"
+            ],
+            "commands": [
+                "workbench.debug.viewlet.action.removeAllBreakpoints"
+            ]
+        },
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<S-h>"
+            ],
+            "commands": [
+                ":bprevious"
+            ]
+        },
+        {
+            "before": [
+                "<C-q>"
+            ],
+            "commands": [
+                ":q"
+            ]
+        },
+        {
+            "before": [
+                "<S-l>"
+            ],
+            "commands": [
+                ":bnext"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "l"
+            ],
+            "commands": [
+                ":vsplit"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "j"
+            ],
+            "commands": [
+                ":split"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f",
+                "i"
+            ],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        },
+        // Useful
+        {
+            "before": [
+                "<leader>",
+                "n"
+            ],
+            "commands": [
+                ":noh"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "r",
+                "e"
+            ],
+            "commands": [
+                "editor.action.rename"
+            ]
+        },
+        // Jump btw panels
+        {
+            "before": [
+                "<C-l>"
+            ],
+            "commands": [
+                "workbench.action.focusLeftGroup"
+            ]
+        },
+        {
+            "before": [
+                "<C-h>"
+            ],
+            "commands": [
+                "workbench.action.focusRightGroup"
+            ]
+        },
+        {
+            "before": [
+                "<C-j>"
+            ],
+            "commands": [
+                "workbench.action.focusBelowGroup"
+            ]
+        },
+        {
+            "before": [
+                "<C-k>"
+            ],
+            "commands": [
+                "workbench.action.focusAboveGroup"
+            ]
+        },
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                "<leader>",
+                "d"
+            ],
+            "after": [
+                "\"",
+                "_",
+                "d"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "c"
+            ],
+            "after": [
+                "\"",
+                "_",
+                "c"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        },
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<S-k>"
+            ],
+            "commands": [
+                "editor.action.moveLinesUpAction"
+            ]
+        },
+        {
+            "before": [
+                "<S-j>"
+            ],
+            "commands": [
+                "editor.action.moveLinesDownAction"
+            ]
+        },
+        {
+            "before": [
+                "p"
+            ],
+            "commands": [
+                "editor.action.clipboardPasteAction"
+            ]
+        },
+    ],
+    "vim.handleKeys": {
+        "<C-a>": true,
+        "<C-f>": false,
+        "<C-h>": true,
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
 }
