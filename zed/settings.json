@@ -1,0 +1,149 @@
+{
+  // disabled Editor Panels and Features
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "title_bar": {
+    "show_sign_in": false,
+    "show_project_items": false,
+  },
+  "tab_bar": {
+    "show_nav_history_buttons": false,
+    "show_tab_bar_buttons": false,
+  },
+  "scrollbar": {
+    "show": "auto",
+  },
+  "toolbar": {
+    "breadcrumbs": false,
+    "quick_actions": false,
+  },
+  "outline_panel": { "button": false },
+  "collaboration_panel": { "button": false },
+  "notification_panel": { "button": false },
+  "gutter": {
+    "folds": false,
+    "runnables": false,
+  },
+  "disable_ai": true,
+
+  // text Editing
+  "vim_mode": true,
+  "vim": {
+    "use_system_clipboard": "always",
+  },
+  "auto_signature_help": true,
+  "hover_popover_delay": 50,
+  "line_indicator_format": "short",
+  "format_on_save": "on",
+
+  // rullers and wrapping
+  "wrap_guides": [80],
+  "preferred_line_length": 80,
+  "soft_wrap": "none",
+
+  // visual
+  "ui_font_size": 18,
+  "buffer_font_size": 18,
+  "buffer_font_family": "Hack Nerd Font Mono",
+  "relative_line_numbers": "enabled",
+  "minimap": {
+    "show": "always",
+  },
+
+  // terminal
+  "terminal": {
+    "button": false,
+    "copy_on_select": true,
+    "dock": "right",
+    "toolbar": {
+      "breadcrumbs": false,
+    },
+  },
+
+  "languages": {
+    "Markdown": {
+      "wrap_guides": [80],
+      "preferred_line_length": 80,
+      "soft_wrap": "preferred_line_length",
+    },
+    "JSONC": {
+      "wrap_guides": [120],
+      "preferred_line_length": 120,
+    },
+    "CSharp": {
+      "wrap_guides": [120],
+      "preferred_line_length": 120,
+    },
+  },
+  "dap": {
+    "lldb-dap": {
+      "binary": "C:\\Program Files\\LLVM\\bin\\lldb-dap.exe",
+    },
+  },
+
+  // Extensions
+  "auto_install_extensions": {
+    "html": true,
+    "C#": true,
+    "NeoCMake": true,
+    "VSCode Dark Modern": true,
+  },
+
+  // custom visual assist color theme
+  "theme": "VSCode Dark Modern",
+  "icon_theme": "Symbols Icon Theme",
+  "semantic_tokens": "combined",
+  "global_lsp_settings": {
+    "semantic_token_rules": [
+      {
+        "token_type": "parameter",
+        "foreground_color": "#b6a671",
+      },
+      {
+        "token_type": "decorator",
+        "foreground_color": "#b5cea8",
+      },
+    ],
+  },
+  "theme_overrides": {
+    "VSCode Dark Modern": {
+      "syntax": {
+        // keywords
+        "keyword": { "color": "#cf564d" },
+        "keyword.operator": { "color": "#cf564d" },
+        // "namespace": { "color": "#c0ccb9" },
+        "namespace": { "color": "#b5cea8" },
+
+        // types
+        "type": { "color": "#efd630" },
+        "class": { "color": "#efd630" },
+        "enum": { "color": "#efd630" },
+        "interface": { "color": "#efd630" },
+        "struct": { "color": "#efd630" },
+        "typeParameter": { "color": "#efd630" },
+        "boolean": { "color": "#b5cea8" },
+
+        // string
+        "punctuation.special": { "color": "#d4b273" },
+
+        // functions
+        "function": { "color": "#d37f2a" },
+        "method": { "color": "#d37f2a" },
+        "constructor": { "color": "#d37f2a" },
+
+        // constants
+        "constant": { "color": "#936228" },
+        "enumMember": { "color": "#936228" },
+        "macro": { "color": "#b461c0" },
+
+        // variables and fields
+        "variable": { "color": "#b0b176" },
+        "property": { "color": "#cdce87" },
+        "parameter": { "color": "#b6a671" },
+        "variable.special": { "color": "#cdce87" },
+      },
+    },
+  },
+}

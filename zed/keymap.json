@@ -1,0 +1,64 @@
+[
+  {
+    "bindings": {
+      "ctrl-shift-e": "workspace::ToggleLeftDock",
+      "alt-i": "terminal_panel::Toggle",
+      "alt-j": "workspace::ToggleBottomDock",
+    },
+  },
+  {
+    // Normal and Visual mode
+    "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting",
+    "bindings": {
+      "g l": "editor::Hover",
+      "g d": "editor::GoToDefinition",
+      "shift-h": "pane::ActivatePreviousItem",
+      "shift-l": "pane::ActivateNextItem",
+
+      // Lsp
+      "space l a": "editor::ToggleCodeActions",
+      "space r e": "editor::Rename",
+
+      // Utilities
+      "space f i": "file_finder::Toggle",
+      "space f p": "outline::Toggle",
+
+      // Debugger
+      "space b r": "editor::ToggleBreakpoint",
+      "space b c": "debugger::ClearAllBreakpoints",
+    },
+  },
+  {
+    // Normal mode
+    "context": "Editor && vim_mode == normal && !VimWaiting",
+    "bindings": {
+      "alt-o": "editor::SwitchSourceHeader",
+      "space s l": "pane::SplitRight",
+      "space s j": "pane::SplitDown",
+      // "down": ["workspace::SendKeystrokes", "4 j"],
+      // "up": ["workspace::SendKeystrokes", "4 k"]
+    },
+  },
+  {
+    // Visual mode
+    "context": "Editor && vim_mode == visual && !VimWaiting",
+    "bindings": {},
+  },
+  {
+    // Insert mode
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "j k": "vim::NormalBefore",
+    },
+  },
+  {
+    // File explorer
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "a": "project_panel::NewFile",
+      "shift-a": "project_panel::NewDirectory",
+      "d": "project_panel::Delete",
+      "r": "project_panel::Rename",
+    },
+  },
+]
