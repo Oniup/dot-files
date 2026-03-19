@@ -37,6 +37,7 @@
   "hover_popover_delay": 50,
   "line_indicator_format": "short",
   "format_on_save": "on",
+  "tab_size": 4,
 
   // rullers and wrapping
   "wrap_guides": [80],
@@ -50,6 +51,14 @@
   "relative_line_numbers": "enabled",
   "minimap": {
     "show": "always",
+    "display_in": "all_editors",
+    "thumb": "hover",
+  },
+
+  // debugger
+  "inlay_hints": {
+    "enabled": false,
+    "show_value_hints": false,
   },
 
   // terminal
@@ -71,6 +80,7 @@
     "JSONC": {
       "wrap_guides": [120],
       "preferred_line_length": 120,
+      "tab_size": 2,
     },
     "CSharp": {
       "wrap_guides": [120],
