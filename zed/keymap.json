@@ -61,4 +61,10 @@
       "r": "project_panel::Rename",
     },
   },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "f11": "debugger::StepInto",
+    },
+  },
 ]
