@@ -71,6 +71,7 @@
     },
   },
 
+  // language specific
   "languages": {
     "Markdown": {
       "wrap_guides": [80],
@@ -86,6 +87,10 @@
       "wrap_guides": [120],
       "preferred_line_length": 120,
     },
+    "Python": {
+      // pyright is so much better
+      "language_servers": ["!pylsp", "pyright"],
+    },
   },
   "dap": {
     "lldb-dap": {
@@ -96,35 +101,22 @@
   // Extensions
   "auto_install_extensions": {
     "html": true,
-    "C#": true,
-    "NeoCMake": true,
-    "VSCode Dark Modern": true,
+    "csharp": true,
+    "vscode-dark-modern": true,
+    "codebook": true,
+    "symbols": true,
   },
 
   // custom visual assist color theme
   "theme": "VSCode Dark Modern",
   "icon_theme": "Symbols Icon Theme",
-  "semantic_tokens": "combined",
-  "global_lsp_settings": {
-    "semantic_token_rules": [
-      {
-        "token_type": "parameter",
-        "foreground_color": "#b6a671",
-      },
-      {
-        "token_type": "decorator",
-        "foreground_color": "#b5cea8",
-      },
-    ],
-  },
   "theme_overrides": {
     "VSCode Dark Modern": {
       "syntax": {
         // keywords
         "keyword": { "color": "#cf564d" },
         "keyword.operator": { "color": "#cf564d" },
-        // "namespace": { "color": "#c0ccb9" },
-        "namespace": { "color": "#b5cea8" },
+        "namespace": { "color": "#c0ccb9" },
 
         // types
         "type": { "color": "#efd630" },
@@ -153,6 +145,15 @@
         "property": { "color": "#cdce87" },
         "parameter": { "color": "#b6a671" },
         "variable.special": { "color": "#cdce87" },
+
+        // markdown
+        "title": { "color": "#d37f2a", "font_style": "italic" },
+        "emphasis.strong": { "color": "#cf564d" },
+        "emphasis": { "font_style": "italic", "color": "#cf564d" },
+        "text.literal": { "color": "#ce9178" },
+        "punctuation.list_marker": { "color": "#d7ba7d" },
+        "link_text": { "color": "#b5cea8" },
+        "link_uri": { "color": "#c0ccb9", "font_style": "italic" },
       },
     },
   },
