@@ -120,6 +120,8 @@
         "keyword": { "color": "#cf564d" },
         "keyword.operator": { "color": "#cf564d" },
         "namespace": { "color": "#c0ccb9" },
+        "module": { "color": "#c0ccb9" },
+        "attribute": { "color": "#c0ccb9" },
 
         // types
         "type": { "color": "#efd630" },
@@ -135,6 +137,7 @@
 
         // functions
         "function": { "color": "#d37f2a" },
+        "function.decorator": { "color": "#c0ccb9" },
         "method": { "color": "#d37f2a" },
         "constructor": { "color": "#d37f2a" },
 
