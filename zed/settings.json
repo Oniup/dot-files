@@ -57,6 +57,9 @@
     "display_in": "all_editors",
     "thumb": "hover",
   },
+  "sticky_scroll": {
+    "enabled": true,
+  },
 
   // debugger
   "inlay_hints": {
@@ -74,7 +77,8 @@
     },
   },
 
-  // language specific
+  // languages
+  "show_signature_help_after_edits": true,
   "languages": {
     "Markdown": {
       "wrap_guides": [80],
@@ -92,7 +96,14 @@
     },
     "Python": {
       // pyright is so much better
+      "wrap_guides": [88],
       "language_servers": ["!pylsp", "pyright"],
+      "formatter": {
+        "external": {
+          "command": "black",
+          "arguments": ["--stdin-filename", "{buffer_path}", "-"],
+        },
+      },
     },
   },
   "dap": {
