@@ -1,9 +1,12 @@
 [
   {
     "bindings": {
+      // Workspace
       "ctrl-shift-e": "workspace::ToggleLeftDock",
       "alt-i": "terminal_panel::Toggle",
       "alt-j": "workspace::ToggleBottomDock",
+      // Debugger
+      "f11": "debugger::StepInto",
     },
   },
   {
@@ -14,15 +17,12 @@
       "g d": "editor::GoToDefinition",
       "shift-h": "pane::ActivatePreviousItem",
       "shift-l": "pane::ActivateNextItem",
-
       // Lsp
       "space l a": "editor::ToggleCodeActions",
       "space r e": "editor::Rename",
-
       // Utilities
       "space f i": "file_finder::Toggle",
       "space f p": "outline::Toggle",
-
       // Debugger
       "space b r": "editor::ToggleBreakpoint",
       "space b c": "debugger::ClearAllBreakpoints",
@@ -35,14 +35,28 @@
       "alt-o": "editor::SwitchSourceHeader",
       "space s l": "pane::SplitRight",
       "space s j": "pane::SplitDown",
-      // "down": ["workspace::SendKeystrokes", "4 j"],
-      // "up": ["workspace::SendKeystrokes", "4 k"]
     },
   },
   {
     // Visual mode
     "context": "Editor && vim_mode == visual && !VimWaiting",
     "bindings": {},
+  },
+  {
+    // Normal mode: don't jump to the next line which made editing with wrapped lines annoying
+    "context": "Editor && vim_mode == normal && !VimWaiting && (extension == md || extension == txt)",
+    "bindings": {
+      "j": ["vim::Down", { "display_lines": true }],
+      "k": ["vim::Up", { "display_lines": true }],
+    },
+  },
+  {
+    // Visual mode: don't jump to the next line which made editing with wrapped lines annoying
+    "context": "Editor && vim_mode == visual && !VimWaiting && (extension == md || extension == txt)",
+    "bindings": {
+      "j": ["vim::Down", { "display_lines": true }],
+      "k": ["vim::Up", { "display_lines": true }],
+    },
   },
   {
     // Insert mode
@@ -59,11 +73,6 @@
       "shift-a": "project_panel::NewDirectory",
       "d": "project_panel::Delete",
       "r": "project_panel::Rename",
-    },
-  },
-  {
-    "bindings": {
-      "f11": "debugger::StepInto",
     },
   },
 ]
