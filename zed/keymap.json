@@ -10,16 +10,19 @@
     },
   },
   {
-    // Normal and Visual mode
-    "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting",
+    // Normal mode
+    "context": "Editor && vim_mode == normal && !VimWaiting",
     "bindings": {
-      "g l": "editor::Hover",
-      "g d": "editor::GoToDefinition",
+      "alt-o": "editor::SwitchSourceHeader",
+      "space s l": "pane::SplitRight",
+      "space s j": "pane::SplitDown",
       "shift-h": "pane::ActivatePreviousItem",
       "shift-l": "pane::ActivateNextItem",
       // Lsp
       "space l a": "editor::ToggleCodeActions",
       "space r e": "editor::Rename",
+      "g l": "editor::Hover",
+      "g d": "editor::GoToDefinition",
       // Utilities
       "space f i": "file_finder::Toggle",
       "space f p": "outline::Toggle",
@@ -29,13 +32,9 @@
     },
   },
   {
-    // Normal mode
-    "context": "Editor && vim_mode == normal && !VimWaiting",
-    "bindings": {
-      "alt-o": "editor::SwitchSourceHeader",
-      "space s l": "pane::SplitRight",
-      "space s j": "pane::SplitDown",
-    },
+    // Normal and Visual mode
+    "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting",
+    "bindings": {},
   },
   {
     // Visual mode
