@@ -1,5 +1,5 @@
 {
-  // disabled Editor Panels and Features
+  // Disabled editor panels and features
   "telemetry": {
     "diagnostics": false,
     "metrics": false,
@@ -28,7 +28,7 @@
   },
   "disable_ai": true,
 
-  // text Editing
+  // Text editing
   "vim_mode": true,
   "vim": {
     "use_system_clipboard": "always",
@@ -42,12 +42,12 @@
     "trust_all_worktrees": true,
   },
 
-  // rullers and wrapping
+  // Rullers and wrapping
   "wrap_guides": [80],
   "preferred_line_length": 80,
   "soft_wrap": "none",
 
-  // visual
+  // Visual
   "ui_font_size": 18,
   "buffer_font_size": 18,
   "buffer_font_family": "Hack Nerd Font Mono",
@@ -61,13 +61,13 @@
     "enabled": true,
   },
 
-  // debugger
+  // Debugger
   "inlay_hints": {
     "enabled": false,
     "show_value_hints": false,
   },
 
-  // terminal
+  // Terminal
   "terminal": {
     "button": false,
     "copy_on_select": true,
@@ -77,12 +77,17 @@
     },
   },
 
-  // languages
+  // Languages
   "show_signature_help_after_edits": true,
   "languages": {
+    "Plain Text": {
+      "wrap_guides": [120],
+      "preferred_line_length": 120,
+      "soft_wrap": "preferred_line_length",
+    },
     "Markdown": {
-      "wrap_guides": [80],
-      "preferred_line_length": 80,
+      "wrap_guides": [120],
+      "preferred_line_length": 120,
       "soft_wrap": "preferred_line_length",
     },
     "JSONC": {
@@ -111,31 +116,50 @@
       "binary": "C:\\Program Files\\LLVM\\bin\\lldb-dap.exe",
     },
   },
+  "lsp": {
+    "clangd": {
+      "binary": {
+        // Disable inserting parameter placeholders when pressing tab
+        "arguments": ["--function-arg-placeholders=0"],
+      },
+    },
+    "rust-analyzer": {
+      "settings": {
+        // Disable inserting parameter placeholders when pressing tab
+        "rust-analyzer.completion.callable.snippets": "add_parentheses",
+      },
+    },
+  },
 
   // Extensions
   "auto_install_extensions": {
+    // Lsps
     "html": true,
     "csharp": true,
-    "vscode-dark-modern": true,
+    "neocmake": true,
     "codebook": true,
-    "symbols": true,
+
+    // Themes
+    "vscode-dark-modern": true,
+    "modern-icons": true,
   },
 
-  // custom visual assist color theme
+  // Custom visual assist color theme
   "theme": "VSCode Dark Modern",
-  "icon_theme": "Symbols Icon Theme",
+  "icon_theme": "Modern Icons (Dark)",
   "theme_overrides": {
     "VSCode Dark Modern": {
       "syntax": {
-        // keywords
+        // Keywords
         "keyword": { "color": "#cf564d" },
         "keyword.operator": { "color": "#cf564d" },
         "namespace": { "color": "#c0ccb9" },
         "module": { "color": "#c0ccb9" },
         "attribute": { "color": "#c0ccb9" },
 
-        // types
+        // Types
         "type": { "color": "#efd630" },
+        "type.builtin": { "color": "#cf564d" },
         "class": { "color": "#efd630" },
         "enum": { "color": "#efd630" },
         "interface": { "color": "#efd630" },
@@ -143,27 +167,27 @@
         "typeParameter": { "color": "#efd630" },
         "boolean": { "color": "#b5cea8" },
 
-        // string
+        // String
         "punctuation.special": { "color": "#d4b273" },
 
-        // functions
+        // Functions
         "function": { "color": "#d37f2a" },
         "function.decorator": { "color": "#c0ccb9" },
         "method": { "color": "#d37f2a" },
         "constructor": { "color": "#d37f2a" },
 
-        // constants
+        // Constants
         "constant": { "color": "#936228" },
         "enumMember": { "color": "#936228" },
         "macro": { "color": "#b461c0" },
 
-        // variables and fields
+        // Variables and fields
         "variable": { "color": "#b0b176" },
         "property": { "color": "#cdce87" },
         "parameter": { "color": "#b6a671" },
         "variable.special": { "color": "#cdce87" },
 
-        // markdown
+        // Markdown
         "title": { "color": "#d37f2a", "font_style": "italic" },
         "emphasis.strong": { "color": "#cf564d" },
         "emphasis": { "font_style": "italic", "color": "#cf564d" },
