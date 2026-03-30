@@ -57,9 +57,6 @@
     "display_in": "all_editors",
     "thumb": "hover",
   },
-  "sticky_scroll": {
-    "enabled": true,
-  },
 
   // Debugger
   "inlay_hints": {
@@ -147,6 +144,7 @@
   // Custom visual assist color theme
   "theme": "VSCode Dark Modern",
   "icon_theme": "Modern Icons (Dark)",
+  "semantic_tokens": "combined",
   "theme_overrides": {
     "VSCode Dark Modern": {
       "syntax": {
@@ -180,6 +178,8 @@
         "constant": { "color": "#936228" },
         "enumMember": { "color": "#936228" },
         "macro": { "color": "#b461c0" },
+        "function.macro": { "color": "#b461c0" },
+        "preproc": { "color": "#a2a2a2" },
 
         // Variables and fields
         "variable": { "color": "#b0b176" },
