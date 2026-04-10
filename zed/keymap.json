@@ -20,6 +20,7 @@
       "shift-l": "pane::ActivateNextItem",
       // Lsp
       "space l a": "editor::ToggleCodeActions",
+      "space l r": "editor::FindAllReferences",
       "space r e": "editor::Rename",
       "g l": "editor::Hover",
       "g d": "editor::GoToDefinition",

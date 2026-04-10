@@ -142,9 +142,32 @@
   },
 
   // Custom visual assist color theme
-  "theme": "VSCode Dark Modern",
-  "icon_theme": "Modern Icons (Dark)",
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "VSCode Dark Modern",
+  },
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Modern Icons (Dark)",
+    "dark": "Modern Icons (Dark)",
+  },
   "semantic_tokens": "combined",
+  "global_lsp_settings": {
+    "semantic_token_rules": [
+      {
+        // Force actual enum values to brown
+        "token_type": "enumMember",
+        "foreground_color": "#936228",
+      },
+      {
+        // Force const variables (like `const int x = 5;`) to your variable color
+        "token_type": "variable",
+        "token_modifiers": ["readonly"],
+        "foreground_color": "#b0b176",
+      },
+    ],
+  },
   "theme_overrides": {
     "VSCode Dark Modern": {
       "syntax": {
