@@ -15,5 +15,4 @@ shell = "pwsh"
 [mouse]
 hide_when_typing = true
 
-[keyboard]
-bindings = [{key = "F1", mods = "Control", action = "ToggleViMode"}]
+# Use Ctrl+Alt+Space to enter ViMode
