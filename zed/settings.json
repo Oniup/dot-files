@@ -61,6 +61,12 @@
   // Rullers and wrapping
   "soft_wrap": "none",
 
+  // Git
+  "git": {
+    "git_gutter": "tracked_files",
+    "enable_diff": false,
+  },
+
   // Visual
   "ui_font_size": 18,
   "buffer_font_size": 18,
@@ -94,17 +100,17 @@
     "Plain Text": {
       "wrap_guides": [120],
       "preferred_line_length": 120,
-      "soft_wrap": "preferred_line_length",
+      "soft_wrap": "bounded",
     },
     "C++": {
       "wrap_guides": [100],
       "preferred_line_length": 100,
-      "soft_wrap": "preferred_line_length",
+      "soft_wrap": "bounded",
     },
     "Markdown": {
       "wrap_guides": [100],
       "preferred_line_length": 100,
-      "soft_wrap": "preferred_line_length",
+      "soft_wrap": "bounded",
     },
     "JSONC": {
       "wrap_guides": [120],
@@ -165,11 +171,6 @@
     "mode": "dark",
     "light": "One Light",
     "dark": "VSCode Dark Modern",
-  },
-  "icon_theme": {
-    "mode": "dark",
-    "light": "Modern Icons (Dark)",
-    "dark": "Modern Icons (Dark)",
   },
   "semantic_tokens": "combined",
   "global_lsp_settings": {
